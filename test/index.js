@@ -1,14 +1,45 @@
 import { assert } from 'chai';
-import defaultAwesomeFunction, { awesomeFunction } from '../src';
+import { Dog } from '../src/models/dog';
+import { PetSize } from '../src';
 
-describe('Awesome test.', () => {
-  it('should test default awesome function', () => {
-    const expectedVal = 'I am the Default Awesome Function, fellow comrade! - Dinesh';
-    assert(defaultAwesomeFunction('Dinesh') === expectedVal, 'Default not awesome :(');
+describe('Dog', () => {
+  it('Calculate food for a month for a Toy', () => {
+    const dog = new Dog();
+    assert.equal(
+      dog
+        .setProperty('size', PetSize.TOY)
+        .getFoodMonths(1),
+      2100
+    );
   });
 
-  it('should test awesome function', () => {
-    const expectedVal = 'I am just an Awesome Function';
-    assert(awesomeFunction() === expectedVal, 'Named awesome :(');
+  it('Calculate food for a month for a Small', () => {
+    const dog = new Dog();
+    assert.equal(
+      dog
+        .setProperty('size', PetSize.SMALL)
+        .getFoodMonths(1),
+      4200
+    );
+  });
+
+  it('Calculate food for a month for a Medium', () => {
+    const dog = new Dog();
+    assert.equal(
+      dog
+        .setProperty('size', PetSize.MEDIUM)
+        .getFoodMonths(1),
+      1035
+    );
+  });
+
+  it('Calculate food for a month for a Big', () => {
+    const dog = new Dog();
+    assert.equal(
+      dog
+        .setProperty('size', PetSize.BIG)
+        .getFoodMonths(1),
+      16350
+    );
   });
 });

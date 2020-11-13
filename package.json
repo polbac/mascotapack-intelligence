@@ -1,7 +1,7 @@
 {
-  "name": "npm-module-boilerplate",
+  "name": "mascotapack-intelligence",
   "version": "1.0.0",
-  "description": "Boilerplate for npm modules with ES6 features and syntax",
+  "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flexdinesh/npm-module-boilerplate.git"
+    "url": "git+https://github.com/polbac/mascotapack-intelligence.git"
   },
   "keywords": [
     "boilerplate",
@@ -30,12 +30,12 @@
     "node",
     "javascript"
   ],
-  "author": "Dinesh Pandiyan <flexdinesh@gmail.com>",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flexdinesh/npm-module-boilerplate/issues"
+    "url": "https://github.com/polbac/mascotapack-intelligence/issues"
   },
-  "homepage": "https://github.com/flexdinesh/npm-module-boilerplate#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
